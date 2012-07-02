@@ -88,7 +88,7 @@ public class Resaglobale implements java.io.Serializable {
 		this.dhannulation = dhannulation;
 	}
 
-	@OneToMany(mappedBy = "resaglobale")
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "resaglobale")
 	public Set<Registre> getRegistres() {
 		return this.registres;
 	}

@@ -141,7 +141,7 @@ public class Registre implements java.io.Serializable {
 		this.abonnement = abonnement;
 	}
 
-	@ManyToOne()
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "IDRESAGLOBALE")
 	public Resaglobale getResaglobale() {
 		return this.resaglobale;

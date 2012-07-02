@@ -21,9 +21,8 @@ public class AdminAbonnesIndexBean implements Serializable {
 	private List<Abonne> abonneList;
 	private List<AbonneView> abonneListView;
 	
-
-
-
+	
+	
 	@Autowired
 	private transient IAbonneService iabonneservice;
 	
@@ -32,7 +31,7 @@ public class AdminAbonnesIndexBean implements Serializable {
 		abonneListView = new ArrayList<AbonneView>();
 		abonneList = iabonneservice.findAll();
 	
-		//
+		
 		for (Abonne abo : abonneList) {
 			AbonneView abonneView = new AbonneView();
 			abonneView.setIdabonne(abo.getIdabonne());

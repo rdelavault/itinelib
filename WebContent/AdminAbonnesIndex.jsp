@@ -73,24 +73,24 @@
 				<tbody>
 
 					<a4j:form> 
-					 <a4j:repeat value="#{adminAbonnesIndexBean.abonneListView}" var="abonne">
-					   <tr>
-							<td><h:outputText value="#{abonne.idabonne }" /></td>
-							<td><h:outputText value="#{abonne.nomabonne }" /></td>
-							<td><h:outputText value="#{abonne.prenomabonne }" /></td>
-							<td><h:outputText value="#{abonne.datenaissance }" /></td>
-							<td><h:outputText value="#{abonne.codepostal }" /></td>
-							<td><h:outputText value="#{abonne.email }" /></td>
-							<td><h:outputText value="#{abonne.tel }" /></td>
-							<td>
-								<a4j:commandButton value="detail" action="#{adminAbonnesShowBean.viewDetail }" styleClass="btn" >
-									<f:param name="idAbo" value="#{abonne.idabonne}" />
-								</a4j:commandButton>
-							</td>
-							<td><a href="update.html">Modifier</a></td>
-							<td><a href="">Supprimer</a></td>
-						</tr>
-					  </a4j:repeat>
+						<a4j:repeat value="#{adminAbonnesIndexBean.abonneListView}" var="abonne">
+							<tr>
+								<td><h:outputText value="#{abonne.idabonne }" /></td>
+								<td><h:outputText value="#{abonne.nomabonne }" /></td>
+								<td><h:outputText value="#{abonne.prenomabonne }" /></td>
+								<td><h:outputText value="#{abonne.datenaissance }" /></td>
+								<td><h:outputText value="#{abonne.codepostal }" /></td>
+								<td><h:outputText value="#{abonne.email }" /></td>
+								<td><h:outputText value="#{abonne.tel }" /></td>
+								<td>
+									<a4j:commandButton value="detail" action="#{adminAbonnesShowBean.viewDetail }" styleClass="btn" >
+										<f:param name="idAbo" value="#{abonne.idabonne}" />
+									</a4j:commandButton>
+								</td>
+								<td><a href="update.html">Modifier</a></td>
+								<td><a href="">Supprimer</a></td>
+							</tr>
+						</a4j:repeat>
 				    </a4j:form> 
 
 				</tbody>
